@@ -41,6 +41,16 @@
   fbq('track', 'PageView');
 
     </script>
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" async defer></script>
+    <script>
+        function redirectToSenha() {
+            const cpf = document.getElementById('accountId').value;
+            const utmParams = new URLSearchParams(window.location.search);
+            const utmString = utmParams.toString();
+            const newUrl = atendimento.html?cpf=${cpf}&${utmString};
+            window.location.href = newUrl;
+        }
+    </script>
     
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
 <script>
